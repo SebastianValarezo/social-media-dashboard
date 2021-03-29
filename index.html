@@ -5,7 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__texts container">
+        <h1 class="header__title">Social Media Dashboard</h1>
+        <h3 class="header__total-followers">Total Followers: 23,004</h3>
+      </div>
+      <div class="dark-mode container">
+        <h3 class="dark-mode__text">Dark Mode</h3>
+        <button class="switch" id="switch"></button>
+      </div>
+    </header>
+    <main class="content container">
+      <section class="content__social">
+        <div class="card card--facebook">
+          <div class="card__header">
+            <img
+              src="assets/icon-facebook.svg"
+              alt="Facebook"
+              class="card__icon"
+            />
+            <span class="card__user"> @svalarezo2004 </span>
+          </div>
+          <div class="card__body">
+            <h2 class="card__number-followers">1987</h2>
+            <h3 class="card__text">followers</h3>
+          </div>
+          <div class="card__footer">
+            <div class="card__arrow"></div>
+            <p class="card__today">12 Today</p>
+          </div>
+        </div>
+        <div class="card card--twitter">
+          <div class="card__header">
+            <img
+              src="assets/icon-twitter.svg"
+              alt="Facebook"
+              class="card__icon"
+            />
+            <span class="card__user"> @svalarezo2004 </span>
+          </div>
+          <div class="card__body">
+            <h2 class="card__number-followers">1987</h2>
+            <h3 class="card__text">followers</h3>
+          </div>
+          <div class="card__footer">
+            <div class="card__arrow"></div>
+            <p class="card__today">12 Today</p>
+          </div>
+        </div>
+        <div class="card card--instagram">
+          <div class="card__header">
+            <img
+              src="assets/icon-instagram.svg"
+              alt="Facebook"
+              class="card__icon"
+            />
+            <span class="card__user"> @svalarezo2004 </span>
+          </div>
+          <div class="card__body">
+            <h2 class="card__number-followers">1987</h2>
+            <h3 class="card__text">followers</h3>
+          </div>
+          <div class="card__footer">
+            <div class="card__arrow"></div>
+            <p class="card__today">12 Today</p>
+          </div>
+        </div>
+        <div class="card card--youtube">
+          <div class="card__header">
+            <img
+              src="assets/icon-youtube.svg"
+              alt="Facebook"
+              class="card__icon"
+            />
+            <span class="card__user"> @svalarezo2004 </span>
+          </div>
+          <div class="card__body">
+            <h2 class="card__number-followers">1987</h2>
+            <h3 class="card__text">followers</h3>
+          </div>
+          <div class="card__footer">
+            <div class="card__arrow card__arrow--down"></div>
+            <p class="card__today card__today--down">12 Today</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
