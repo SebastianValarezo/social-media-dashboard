@@ -19,6 +19,16 @@ body.dark {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aeb3cb;
+  border: none;
+}
+
 .header {
   background: #f5f7ff;
   height: 16rem;
@@ -94,14 +104,15 @@ body.dark .dark-mode .dark-mode__text {
 
 .content {
   margin-top: -2.8rem;
+  margin-bottom: 4rem;
 }
 .content .content__social {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   display: grid;
   gap: 2rem;
 }
 .content .content__social .card--facebook {
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   height: 250px;
@@ -116,7 +127,7 @@ body.dark .dark-mode .dark-mode__text {
   background: #198ff5;
 }
 .content .content__social .card--twitter {
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   height: 250px;
@@ -131,7 +142,7 @@ body.dark .dark-mode .dark-mode__text {
   background: #1ca0f2;
 }
 .content .content__social .card--instagram {
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   height: 250px;
@@ -146,7 +157,7 @@ body.dark .dark-mode .dark-mode__text {
   background: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
 }
 .content .content__social .card--youtube {
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   overflow: hidden;
   height: 250px;
@@ -237,4 +248,63 @@ body.dark .content .content__social .card .card__body .card__text {
   width: 12px;
   height: 100%;
   margin-right: 4px;
+}
+.content .subtitle {
+  color: #63687e;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+body.dark .content .subtitle {
+  color: white;
+}
+.content .overview {
+  display: grid;
+  gap: 2rem;
+}
+.content .overview .card-overview {
+  background: #f0f2fa;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+body.dark .content .overview .card-overview {
+  background: #252a41;
+}
+.content .overview .card-overview .card-overview__twoline,
+.content .overview .card-overview .card-overview__oneline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .overview .card-overview .card__text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #63687e;
+}
+body.dark .content .overview .card-overview .card__text {
+  color: #8b97c6;
+}
+.content .overview .card-overview .card__number {
+  color: #1e202a;
+  font-size: 2.5rem;
+}
+body.dark .content .overview .card-overview .card__number {
+  color: white;
+}
+.content .overview .card-overview .card__porcents {
+  color: #1db489;
+  font-size: 1rem;
+  font-weight: 700;
+  position: relative;
+}
+.content .overview .card-overview .card__porcents::before {
+  content: url("../assets/icon-up.svg");
+  position: absolute;
+  top: -20%;
+  left: -10px;
+  width: 10px;
+  height: 10px;
 }/*# sourceMappingURL=styles.css.map */
