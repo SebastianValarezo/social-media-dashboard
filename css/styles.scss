@@ -71,10 +71,11 @@ body {
 // Header
 
 .header {
-  // border: 2px solid black;
   background: $light-top-pattern;
   height: 16rem;
   border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
 
   .header__texts {
     padding: 2rem 0;
@@ -399,5 +400,35 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content__social {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .overview {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .header--resposive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dark-mode {
+      padding: 0;
+      border: none;
+      gap: 2rem;
+      body.dark & {
+        border: none;
+      }
+    }
+  }
+
+  .content {
+    margin-top: -7rem;
   }
 }
